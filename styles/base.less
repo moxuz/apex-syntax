@@ -107,6 +107,34 @@ atom-text-editor .search-results .marker.current-result .region,
 
 }
 
+// Better Syntax Highlighting
+.keyword {
+    color: @syntax-text-color-dark;
+    font-weight: bold;
+}
+
+.storage.type.function,
+.meta.class {
+    color: @syntax-text-color-very-dark;
+    font-weight: bold;
+}
+
+.constant.language {
+    color: @syntax-text-color-light;
+    font-weight: bold;
+}
+
+.source.python {
+    .entity.name.function.decorator,
+    .support.function.magic,
+    .support.variable.magic,
+    .support.function,
+    .support.type {
+        color: @syntax-text-color-light;
+        font-weight: bold;
+    }
+}
+
 // CSS
 
 .source.css {
