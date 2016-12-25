@@ -107,23 +107,34 @@ atom-text-editor .search-results .marker.current-result .region,
 
 }
 
-// Better Syntax Highlighting
+// Keywords
 .keyword {
     color: @syntax-text-color-dark;
     font-weight: bold;
 }
 
+// Functions / Classes
 .storage.type.function,
 .meta.class {
     color: @syntax-text-color-very-dark;
     font-weight: bold;
 }
 
+// Constants
 .constant.language {
     color: @syntax-text-color-light;
     font-weight: bold;
 }
 
+// Javascript
+.source.js {
+    .punctuation.definition.function.body {
+        color: @syntax-text-color-very-dark;
+        font-weight: bold;
+    }
+}
+
+// Python
 .source.python {
     .entity.name.function.decorator,
     .support.function.magic,
