@@ -128,9 +128,28 @@ atom-text-editor .search-results .marker.current-result .region,
 
 // Javascript
 .source.js {
-    .punctuation.definition.function.body {
+    .punctuation.definition.function.body,
+    .storage.type.var,
+    .storage.modifier,
+    .meta.function.method.definition,
+    .punctuation.definition.parameters,
+    .variable.language,
+    .meta.brace.curly,
+    .meta.function.arrow,
+    .meta.export {
         color: @syntax-text-color-very-dark;
         font-weight: bold;
+    }
+
+    .entity.name.function.constructor {
+        color: @syntax-text-color-light;
+        font-weight: bold;
+    }
+
+    .variable.parameter.function,
+    .meta.parameters {
+        color: @syntax-text-color;
+        font-weight: normal;
     }
 }
 
