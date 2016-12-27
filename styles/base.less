@@ -128,16 +128,16 @@ atom-text-editor .search-results .marker.current-result .region,
 
 // Javascript
 .source.js {
-    .punctuation.definition.function.body,
-    .storage.type.var,
-    .storage.modifier,
-    .meta.function.method.definition,
-    .punctuation.definition.parameters,
     .variable.language,
-    .meta.brace.curly,
-    .meta.function.arrow,
-    .meta.export {
-        color: @syntax-text-color-very-dark;
+    .storage.modifier.async,
+    .punctuation.definition.function.body,
+    .meta.function.method.definition,
+    .meta.export,
+    .punctuation.definition.modules,
+    .storage.modifier,
+    .storage.type.var,
+    .punctuation.definition.parameters {
+        color: @syntax-text-color-dark;
         font-weight: bold;
     }
 
@@ -146,8 +146,7 @@ atom-text-editor .search-results .marker.current-result .region,
         font-weight: bold;
     }
 
-    .variable.parameter.function,
-    .meta.parameters {
+    .entity.other.inherited-class {
         color: @syntax-text-color;
         font-weight: normal;
     }
